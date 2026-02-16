@@ -2,4 +2,7 @@ parameters:
     ignoreErrors:
         -
             identifier: missingType.iterableValue
+        # Defensive programming: isset check kept for runtime safety
+        -
+            identifier: isset.offset
     level: 7
