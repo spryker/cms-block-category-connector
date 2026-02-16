@@ -46,7 +46,7 @@ class CmsBlockCategoryCollector extends AbstractStoragePropelCollector
         foreach ($positions as $position) {
             $positionCmsBlock = explode(':', $position);
 
-            if (isset($positionCmsBlock[0], $positionCmsBlock[1])) {
+            if (isset($positionCmsBlock[1])) {
                 $cmsBlockNames[$positionCmsBlock[0]][] = $positionCmsBlock[1];
             }
         }
