@@ -27,9 +27,6 @@ class CmsBlockCategoryConnectorFacadeTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testUpdateCmsBlockCategoryRelations(): void
     {
         $cmsBlockTransfer = $this->tester->haveCmsBlock();
@@ -56,9 +53,6 @@ class CmsBlockCategoryConnectorFacadeTest extends Unit
         $this->assertEquals([$categoryTransfer->getIdCategory()], $cmsBlockTransfer->getIdCategories());
     }
 
-    /**
-     * @return void
-     */
     public function testHydrateCmsBlockCategoryRelations(): void
     {
         $cmsBlockTransfer = $this->tester->haveCmsBlock();
@@ -86,9 +80,6 @@ class CmsBlockCategoryConnectorFacadeTest extends Unit
         $this->assertEquals([$categoryTransfer->getIdCategory()], $cmsBlockTransfer->getIdCategories());
     }
 
-    /**
-     * @return void
-     */
     public function testSyncCmsBlockCategoryPosition(): void
     {
         $this->tester->getCmsBlockCategoryConnectorFacade()
@@ -100,9 +91,6 @@ class CmsBlockCategoryConnectorFacadeTest extends Unit
         $this->assertNotEmpty($cmsBlockCategoryPositionTransfer);
     }
 
-    /**
-     * @return void
-     */
     public function testGetCmsBlockNamesIndexedByCmsBlockIdsForCategoryWillReturnCmsBlockNamesIndexedByCmsBlockIds(): void
     {
         // Arrange

@@ -19,9 +19,6 @@ class CmsBlockCategoryReader implements CmsBlockCategoryReaderInterface
      */
     protected $queryContainer;
 
-    /**
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Persistence\CmsBlockCategoryConnectorQueryContainerInterface $queryContainer
-     */
     public function __construct(
         CmsBlockCategoryConnectorQueryContainerInterface $queryContainer
     ) {

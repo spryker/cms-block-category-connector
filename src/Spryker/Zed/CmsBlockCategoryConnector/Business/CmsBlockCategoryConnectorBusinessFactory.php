@@ -130,9 +130,6 @@ class CmsBlockCategoryConnectorBusinessFactory extends AbstractBusinessFactory
         return new CmsBlockCategoryConnectorCollector();
     }
 
-    /**
-     * @return \Spryker\Zed\CmsBlockCategoryConnector\Business\Collector\CmsBlockCategoryCollectorRunnerInterface
-     */
     public function createCmsBlockCategoryCollectorRunner(): CmsBlockCategoryCollectorRunnerInterface
     {
         return new CmsBlockCategoryCollectorRunner(

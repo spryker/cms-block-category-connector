@@ -122,9 +122,6 @@ class CmsBlockCategoryConnectorCommunicationFactory extends AbstractCommunicatio
         return $this->getProvidedDependency(CmsBlockCategoryConnectorDependencyProvider::QUERY_CONTAINER_CMS_BLOCK);
     }
 
-    /**
-     * @return \Spryker\Zed\CmsBlockCategoryConnector\Communication\Expander\CmsBlockCategoryFormExpanderInterface
-     */
     public function createCmsBlockCategoryFormExpander(): CmsBlockCategoryFormExpanderInterface
     {
         return new CmsBlockCategoryFormExpander(

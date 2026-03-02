@@ -42,11 +42,6 @@ class CmsBlockDataProvider
      */
     protected $idCategoriesWithWrongTemplate = [];
 
-    /**
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Persistence\CmsBlockCategoryConnectorQueryContainerInterface $cmsBlockCategoryConnectorQueryContainer
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Dependency\QueryContainer\CmsBlockCategoryConnectorToCategoryQueryContainerInterface $categoryQueryContainer
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Dependency\Facade\CmsBlockCategoryConnectorToLocaleInterface $localeFacade
-     */
     public function __construct(
         CmsBlockCategoryConnectorQueryContainerInterface $cmsBlockCategoryConnectorQueryContainer,
         CmsBlockCategoryConnectorToCategoryQueryContainerInterface $categoryQueryContainer,
@@ -152,12 +147,6 @@ class CmsBlockDataProvider
         return $categoryList;
     }
 
-    /**
-     * @param \Orm\Zed\Category\Persistence\SpyCategory $categoryEntity
-     * @param int $idLocale
-     *
-     * @return string
-     */
     protected function getFormattedCategoryNameForLocale(SpyCategory $categoryEntity, int $idLocale): string
     {
         $categoryName = $categoryEntity

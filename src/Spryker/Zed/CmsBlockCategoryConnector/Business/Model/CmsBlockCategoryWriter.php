@@ -36,11 +36,6 @@ class CmsBlockCategoryWriter implements CmsBlockCategoryWriterInterface
      */
     protected $categoryQueryContainer;
 
-    /**
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Persistence\CmsBlockCategoryConnectorQueryContainerInterface $queryContainer
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Dependency\Facade\CmsBlockCategoryConnectorToTouchInterface $touchFacade
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Dependency\QueryContainer\CmsBlockCategoryConnectorToCategoryQueryContainerInterface $categoryQueryContainer
-     */
     public function __construct(
         CmsBlockCategoryConnectorQueryContainerInterface $queryContainer,
         CmsBlockCategoryConnectorToTouchInterface $touchFacade,

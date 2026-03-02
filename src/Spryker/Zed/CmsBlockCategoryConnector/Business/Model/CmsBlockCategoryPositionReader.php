@@ -18,9 +18,6 @@ class CmsBlockCategoryPositionReader implements CmsBlockCategoryPositionReaderIn
      */
     protected $cmsBlockCategoryConnectorQueryConnector;
 
-    /**
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Persistence\CmsBlockCategoryConnectorQueryContainerInterface $cmsBlockCategoryConnectorQueryContainer
-     */
     public function __construct(CmsBlockCategoryConnectorQueryContainerInterface $cmsBlockCategoryConnectorQueryContainer)
     {
         $this->cmsBlockCategoryConnectorQueryConnector = $cmsBlockCategoryConnectorQueryContainer;

@@ -43,11 +43,6 @@ class CategoryDataProvider
      */
     protected $assignedCmsBlocksForTemplates = [];
 
-    /**
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Persistence\CmsBlockCategoryConnectorQueryContainerInterface $cmsBlockCategoryConnectorQueryContainer
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Dependency\QueryContainer\CmsBlockCategoryConnectorToCmsBlockQueryContainerInterface $cmsBlockQueryContainer
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Dependency\QueryContainer\CmsBlockCategoryConnectorToCategoryQueryContainerInterface $categoryQueryContainer
-     */
     public function __construct(
         CmsBlockCategoryConnectorQueryContainerInterface $cmsBlockCategoryConnectorQueryContainer,
         CmsBlockCategoryConnectorToCmsBlockQueryContainerInterface $cmsBlockQueryContainer,
@@ -92,11 +87,6 @@ class CategoryDataProvider
         return $categoryTransfer;
     }
 
-    /**
-     * @param int $idCategory
-     *
-     * @return array
-     */
     protected function getAssignedIdCmsBlocksByIdCategory(int $idCategory): array
     {
         $cmsBlockCategoryEntities = $this->queryContainer
@@ -208,9 +198,6 @@ class CategoryDataProvider
         return $this->wrongCmsBlocks;
     }
 
-    /**
-     * @return array
-     */
     protected function getCategoryTemplates(): array
     {
         /** @var \Propel\Runtime\Collection\ObjectCollection $categoryCollection */

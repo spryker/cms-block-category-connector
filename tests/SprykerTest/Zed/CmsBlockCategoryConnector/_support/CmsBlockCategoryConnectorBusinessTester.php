@@ -31,12 +31,6 @@ class CmsBlockCategoryConnectorBusinessTester extends Actor
 {
     use _generated\CmsBlockCategoryConnectorBusinessTesterActions;
 
-    /**
-     * @param \Generated\Shared\Transfer\CategoryTransfer $categoryTransfer
-     * @param array $cmsBlockData
-     *
-     * @return \Generated\Shared\Transfer\CmsBlockTransfer
-     */
     public function haveCmsBlockWithCategory(CategoryTransfer $categoryTransfer, array $cmsBlockData = []): CmsBlockTransfer
     {
         $cmsCategoryFacade = $this->getCmsBlockCategoryConnectorFacade();
@@ -56,17 +50,11 @@ class CmsBlockCategoryConnectorBusinessTester extends Actor
         return $cmsBlockTransfer;
     }
 
-    /**
-     * @return \Spryker\Zed\CmsBlockCategoryConnector\Business\CmsBlockCategoryConnectorFacadeInterface
-     */
     public function getCmsBlockCategoryConnectorFacade(): CmsBlockCategoryConnectorFacadeInterface
     {
         return $this->getLocator()->cmsBlockCategoryConnector()->facade();
     }
 
-    /**
-     * @return string
-     */
     public function getDefaultPositionName(): string
     {
         return (new CmsBlockCategoryConnectorConfig())->getCmsBlockCategoryPositionDefault();

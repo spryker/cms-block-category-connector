@@ -23,10 +23,6 @@ class CmsBlockCategoryPositionSync implements CmsBlockCategoryPositionSyncInterf
      */
     protected $cmsBlockCategoryConnectorConfig;
 
-    /**
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Persistence\CmsBlockCategoryConnectorQueryContainerInterface $cmsBlockCategoryConnectorQueryContainer
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\CmsBlockCategoryConnectorConfig $cmsBlockCategoryConnectorConfig
-     */
     public function __construct(
         CmsBlockCategoryConnectorQueryContainerInterface $cmsBlockCategoryConnectorQueryContainer,
         CmsBlockCategoryConnectorConfig $cmsBlockCategoryConnectorConfig

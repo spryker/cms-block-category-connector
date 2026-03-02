@@ -23,10 +23,6 @@ class CmsBlockCategoryFormExpander implements CmsBlockCategoryFormExpanderInterf
      */
     protected $categoryDataProvider;
 
-    /**
-     * @param \Spryker\Zed\Kernel\Communication\Form\AbstractType $categoryType
-     * @param \Spryker\Zed\CmsBlockCategoryConnector\Communication\DataProvider\CategoryDataProvider $categoryDataProvider
-     */
     public function __construct(
         AbstractType $categoryType,
         CategoryDataProvider $categoryDataProvider
@@ -35,11 +31,6 @@ class CmsBlockCategoryFormExpander implements CmsBlockCategoryFormExpanderInterf
         $this->categoryDataProvider = $categoryDataProvider;
     }
 
-    /**
-     * @param \Symfony\Component\Form\FormBuilderInterface $builder
-     *
-     * @return void
-     */
     public function buildForm(FormBuilderInterface $builder): void
     {
         /** @var \Generated\Shared\Transfer\CategoryTransfer $categoryTransfer */

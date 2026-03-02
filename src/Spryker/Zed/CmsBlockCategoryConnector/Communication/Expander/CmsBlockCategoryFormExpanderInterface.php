@@ -11,10 +11,5 @@ use Symfony\Component\Form\FormBuilderInterface;
 
 interface CmsBlockCategoryFormExpanderInterface
 {
-    /**
-     * @param \Symfony\Component\Form\FormBuilderInterface $builder
-     *
-     * @return void
-     */
     public function buildForm(FormBuilderInterface $builder): void;
 }
