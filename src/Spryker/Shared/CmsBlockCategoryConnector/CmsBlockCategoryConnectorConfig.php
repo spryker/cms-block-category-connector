@@ -13,6 +13,8 @@ use Spryker\Shared\Kernel\AbstractBundleConfig;
 class CmsBlockCategoryConnectorConfig extends AbstractBundleConfig
 {
     /**
+     * @api
+     *
      * Specification:
      * - Used to define a storage key
      * - Used in Yves to provide an option name for client
@@ -22,6 +24,8 @@ class CmsBlockCategoryConnectorConfig extends AbstractBundleConfig
     public const OPTION_NAME = 'category';
 
     /**
+     * @api
+     *
      * Specification:
      * - Used to define a storage key
      * - Used in Yves to provide an option name for client
@@ -31,6 +35,8 @@ class CmsBlockCategoryConnectorConfig extends AbstractBundleConfig
     public const OPTION_POSITION_NAME = 'category_position';
 
     /**
+     * @api
+     *
      * Specification:
      * - Full name for storage key for CMS Block to Category relation
      */

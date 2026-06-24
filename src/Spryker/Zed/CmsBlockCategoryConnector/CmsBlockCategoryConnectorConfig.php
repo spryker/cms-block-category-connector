@@ -12,6 +12,8 @@ use Spryker\Zed\Kernel\AbstractBundleConfig;
 class CmsBlockCategoryConnectorConfig extends AbstractBundleConfig
 {
     /**
+     * @api
+     *
      * Default position
      *
      * @var string
@@ -19,6 +21,8 @@ class CmsBlockCategoryConnectorConfig extends AbstractBundleConfig
     public const CMS_BLOCK_CATEGORY_POSITION_DEFAULT = '';
 
     /**
+     * @api
+     *
      * A name of category template: Category and CmsBlock contents are together
      *
      * @var string
@@ -26,6 +30,8 @@ class CmsBlockCategoryConnectorConfig extends AbstractBundleConfig
     public const CATEGORY_TEMPLATE_WITH_CMS_BLOCK = 'Catalog + CMS Block';
 
     /**
+     * @api
+     *
      * A name of category template: CmsBlock content is presented alone
      *
      * @var string
